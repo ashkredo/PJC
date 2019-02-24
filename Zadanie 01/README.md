@@ -1,4 +1,4 @@
-# Zadanie 1
+# Zadanie 01
 
 Napisz program, który w petli prosi uzytkownika o wpisanie dodatniej liczby calkowitej; wczytywanie konczy sie, gdy uzytkownik poda liczbe 0. 
 
