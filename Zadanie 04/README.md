@@ -6,7 +6,7 @@ Zdefiniować pięć funkcji operujących na C-napisach (i jedną, isLetter, na p
 	bool isLetter(char c);                // 2
 	char* reverse(char* cstr);            // 3
 	size_t words(const char* cstr);       // 4
-	size_t words2(const char* cstr); 	  // 5
+	size_t words2(const char* cstr);      // 5
 	char* concat(char* t, const char* s); // 6
 
 	void ord3(double& a, double& b, double& c);
