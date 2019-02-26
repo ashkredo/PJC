@@ -13,14 +13,14 @@ Następnie zdefiniuj odpowiednie metody i funkcje, tak, aby dla odcinka seg i li
 
 W funkcji main tworzymy tablicę par (Couple) z danymi, na przykład, takimi:
 
-* wartością wyrażenia d*seg lub seg*d był odcinek powstały z seg przez przeskalowanie w stosunku d (tzn. współrzędne końca i początku tego odcinka mają być równe d*A i d*B, gdzie A i B to współrzędne początku i końca odcinka seg);
-* wartością wyrażenia seg/d był odcinek powstały z seg przez przeskalowanie
-w stosunku 1 (odcinek seg „podzielony” przez d);
-	   d
-* wartością wyrażenia seg+d lub d+seg był odcinek seg przesunięty o d w prawo;
-* wartością wyrażenia seg-d był odcinek seg przesunięty o d w lewo;
-* wartością wyrażenia seg1+seg2 był najmniejszy odcinek zawierający odcinki seg1 i seg2;
-* wartością wyrażenia seg(d) było true wtedy, gdy d należy do odcinka seg i false w przeciwnym przypadku.
+	* wartością wyrażenia d*seg lub seg*d był odcinek powstały z seg przez przeskalowanie w stosunku d (tzn. współrzędne końca i 		początku tego odcinka mają być równe d*A i d*B, gdzie A i B to współrzędne początku i końca odcinka seg);
+	* wartością wyrażenia seg/d był odcinek powstały z seg przez przeskalowanie
+	w stosunku 1 (odcinek seg „podzielony” przez d);
+		   d
+	* wartością wyrażenia seg+d lub d+seg był odcinek seg przesunięty o d w prawo;
+	* wartością wyrażenia seg-d był odcinek seg przesunięty o d w lewo;
+	* wartością wyrażenia seg1+seg2 był najmniejszy odcinek zawierający odcinki seg1 i seg2;
+	* wartością wyrażenia seg(d) było true wtedy, gdy d należy do odcinka seg i false w przeciwnym przypadku.
 
 Przeciąż też operator operator<< tak, aby następująca funkcja main("Segment.cpp"):
 
