@@ -5,7 +5,7 @@ z argumentem typu T i zwraca bool (takie funkcje nazywamy predykatami).
 
 Uzupełnij kod programu, tak, aby dał się skompilować i wykonać.
 
-Funkcja (szablon) printTab ma za zadanie wydrukowa¢ w ładnej formie przekazaną tablicę (elementy w jednym wierszu, oddzielone spacjami).
+Funkcja (szablon) printTab ma za zadanie wydrukować w ładnej formie przekazaną tablicę (elementy w jednym wierszu, oddzielone spacjami).
 
 Funkcja (szablon) part ma za zadanie tak poprzestawiać elementy przekazanej tablicy arr, aby wszystkie elementy, dla których predykat FUN jest
 spełniony (tzn. FUN wywołany z wartością tego elementu jako argumentem zwraca true) znalazły się na lewo od wszystkich elementów, dla których ten
