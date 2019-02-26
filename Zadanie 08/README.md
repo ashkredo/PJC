@@ -49,17 +49,17 @@ Przykładowy schemat programu("BanksPersons.cpp"):
 	enum Banks {PKO, BGZ, BRE, BPH};
 
 	struct Account {
-	    Banks   bank;
-	    int  balance;
+	    Banks bank;
+	    int balance;
 	};
 
 	struct Person {
-	    char   name[20];
+	    char name[20];
 	    Account account;
 	};
 
 	struct Couple {
-	    Person  he;
+	    Person he;
 	    Person she;
 	};
 
