@@ -5,23 +5,23 @@ Definiujemy jedno wyliczenie i trzy C-struktury:
 	enum Banks {PKO, BGZ, BRE, BPH};
 	
 	struct Account {
-		Banks bank;
-		int balance;
+	    Banks bank;
+	    int balance;
 	};
 	
 	struct Person {
-		char name[20];
-		Account account;
+	    char name[20];
+	    Account account;
 	};
 	
 	struct Couple {
-		Person he;
-		Person she;
+	    Person he;
+	    Person she;
 	};
 
 W funkcji main tworzymy tablicę par (Couple) z danymi, na przykład, takimi:
 
-	No         He   			She
+	No         He   	    She
 	   Name  Bank Balance Name Bank Balance
 	0  Johny PKO   1200   Mary BGZ   1500
 	1  Peter BGZ   1400   Suzy BRE   1300
@@ -31,7 +31,7 @@ W funkcji main tworzymy tablicę par (Couple) z danymi, na przykład, takimi:
 Zdefiniować funkcję o nagłówku:
 
 	const Couple* bestClient(const Couple* cpls,
-							 int size, Banks bank);
+				 int size, Banks bank);
 
 która zwraca wskaźnik do tej pary (Couple) z tablicy przekazanej jako pierwszy
 argument (o wymiarze size), która ma największą sumę oszczędności jego (he) i jej
@@ -49,38 +49,38 @@ Przykładowy schemat programu("BanksPersons.cpp"):
 	enum Banks {PKO, BGZ, BRE, BPH};
 
 	struct Account {
-		Banks   bank;
-		int  balance;
+	    Banks   bank;
+	    int  balance;
 	};
 
 	struct Person {
-		char   name[20];
-		Account account;
+	    char   name[20];
+	    Account account;
 	};
 
 	struct Couple {
-		Person  he;
-		Person she;
+	    Person  he;
+	    Person she;
 	};
 
 	const Couple* bestClient(const Couple* cpls,
-							 int size, Banks bank) {
-		// ...
+				 int size, Banks bank) {
+	    // ...
 	}
 
 	int main() {
-		using std::cout; using std::endl;
-		Couple cpls[] = {
-			// ...
-		};
+	    using std::cout; using std::endl;
+	    Couple cpls[] = {
+		// ...
+	    };
 
-		const Couple* p = bestClient(cpls,4,BGZ);
-		if (p)
-			cout << p->he.name << " and " << p->she.name
-				 << ": " << p->he.account.balance +
-							p->she.account.balance << endl;
+	    const Couple* p = bestClient(cpls,4,BGZ);
+	    if (p)
+		cout << p->he.name << " and " << p->she.name
+		     << ": " << p->he.account.balance +
+				p->she.account.balance << endl;
 		else
-			cout << "No such couple..." << endl;
+		    cout << "No such couple..." << endl;
 	}
 
 powinien wypisać coś w rodzaju:
