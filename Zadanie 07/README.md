@@ -5,8 +5,8 @@ Napisz (i przetestuj) opisany niżej program:
 Struktura opisująca węzeł listy ma postać
 
 	struct Node {
-		int data;
-		Node* next;
+	   int data;
+	   Node* next;
 	};
 
 Każdy węzeł przechowuje dane- w tym przypadku po prostu liczbę całkowitą data.
@@ -23,7 +23,6 @@ gdzie
 1. arrayToList pobiera tablicę int'ów i jej wymiar. Zadaniem funkcji jest utworzenie listy jednokierunkowej obiektów struktury Node, zawierającej w kolejnych węzłach kolejne liczby z przekazanej tablicy (w takiej samej kolejności!). Funkcja zwraca wskażnik do "głowy" utworzonej listy.
 	
 2. removeOdd pobiera wskażnik do "głowy" listy i zwraca wskażnik do "głowy" listy powstającej z listy pierwotnej po usunięciu wszystkich węzłów, w których data jest liczbą nieparzystą.
-
 UWAGA: Funkcja ta nie powinna tworzyć żadnych nowych węzłów, tylko usuwać te zawierające nieparzyste dane. Jeśli lista zawiera same liczby nieparzyste, wszystkie węzły powinny zostać usunięte, a funkcja powinna zwrócić nullptr. Zapewnić, by przy każdym usuwaniu węzła funkcja drukowała wartość danej w nim zawartej, abyśmy widzieli, że rzeczywiście węzły te są usuwane.
 
 3. showList drukuje zawartość listy (dane z kolejnych węzłów, w jednej linii, oddzielone znakami odstępu).
