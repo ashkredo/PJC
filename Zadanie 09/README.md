@@ -13,7 +13,8 @@ Następnie zdefiniuj odpowiednie metody i funkcje, tak, aby dla odcinka seg i li
 
 W funkcji main tworzymy tablicę par (Couple) z danymi, na przykład, takimi:
 
-	* wartością wyrażenia d*seg lub seg*d był odcinek powstały z seg przez przeskalowanie w stosunku d (tzn. współrzędne końca i 		początku tego odcinka mają być równe d*A i d*B, gdzie A i B to współrzędne początku i końca odcinka seg);
+	* wartością wyrażenia d*seg lub seg*d był odcinek powstały z seg przez przeskalowanie w stosunku d (tzn. współrzędne końca i 
+	początku tego odcinka mają być równe d*A i d*B, gdzie A i B to współrzędne początku i końca odcinka seg);
 	* wartością wyrażenia seg/d był odcinek powstały z seg przez przeskalowanie
 	w stosunku 1 (odcinek seg „podzielony” przez d);
 		   d
